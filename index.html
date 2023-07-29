@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">  
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -91,7 +91,7 @@
             margin-right: 10px;
         }
     </style>
-     <script>
+    <script>
         $(document).ready(function () {
             fetch("http://spartacodingclub.shop/sparta_api/weather/seoul").then(res => res.json()).then(data => {
                 let number = data['temp']
@@ -105,7 +105,7 @@
     <div class="mytitle">
         <h1>내 생애 최고의 영화들!</h1>
         <div>현재 서울의 날씨 : <span id="temp">20</span>도</div>
-        <button>영화 기록하기</button>
+        <button onclick="hey()">영화 기록하기</button>
 
     </div>
     <div class="mypost">
